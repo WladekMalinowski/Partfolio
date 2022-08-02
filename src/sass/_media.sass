@@ -4,7 +4,7 @@
             width: 700px
     .navbar
         padding: 0
-        --bs-navbar-toggler-border-color: rgba(255, 255, 255, 0.5)
+        --bs-navbar-toggler-border-color: rgba(0, 0, 0, 0.5)
         --bs-navbar-toggler-icon-bg: url('../icons/navbar.svg')
     .navbar-nav .nav-item .nav-link
         padding: 0px
@@ -12,8 +12,6 @@
         margin-left: 40px
         margin: 10px 0 10px 40px
         font-size: 30px
-    .promo_menu
-        display: none
     .navbar-collapse
         background-color: rgba(0, 0, 0, 0.9)
         z-index: 3
@@ -33,6 +31,8 @@
                 width: 300px
                 opacity: 0.3
         &_img_dot
+            display: none
+        &_menu
             display: none
         h2
             padding-right: 60px
@@ -145,6 +145,126 @@
             margin-top: 20px
         .footer_line
             margin-top: 30px
+@media (max-width: 361px)
+    .navbar
+        .container-fluid
+            justify-content: end
+    .navbar-brand
+        display: none
+    .navbar-toggler
+        margin-right: 0px
+    .promo
+        background: #000
+        height: 740px
+        padding: 0 8px
+        h1
+            font-size: 40px
+            line-height: 50px
+            padding-top: 0px
+        h2
+            font-size: 16px
+            line-height: 26px
+            margin-top: 12px
+        &_img_woman
+            display: block
+            img
+                top: 70px
+                opacity: 1
+                height: 290px
+                width: 175px
+        &_img_dot
+            display: block
+            img
+                right: 252px
+                top: 130px
+                width: 67px
+        .btn
+            margin-top: 23px
+            width: 300px
+            margin-left: 10px
+        &_menu
+            display: block
+            right: 173px
+            top: 480px
+            width: 143px
+            height: 126px
+            padding: 14px
+            h3
+                font-size: 8px
+                margin-bottom: 0px
+                line-height: 10px
+            &_text
+                margin-top: 12px
+                font-size: 7px
+                line-height: 10px
+            &_line
+                width: 100%
+                height: 3px
+            &_point
+                font-size: 7px
+                top: 0px
+            
+
+    .info
+        padding: 0 8px
+        height: auto
+        h2
+            font-size: 35px
+            line-height: 50px
+            padding-top: 0px 
+            margin-top: 60px
+        h3
+            font-size: 10px
+        &_leftside
+            &_box
+                &_wrap
+                    padding: 0px
+                    display: flex
+                    box-shadow: none
+                    flex-direction: row
+                    height: auto
+                    width: auto
+                    &:nth-child(1)
+                        border-top: none
+                    &:nth-child(2)
+                        border-top: 1px solid #acacac
+                    &:nth-child(3)
+                        border-top: 1px solid #acacac
+                    &:nth-child(4)
+                        border-top: 1px solid #acacac
+                    &_icon
+                        display: flex
+                        justify-content: center
+                        align-content: center
+                        width: 40px
+                        height: 40px
+                        background: rgba(95, 52, 187, 0.1)
+                        border-radius: 100%
+                        img
+                            max-width: 50%
+                    &_head
+                        margin-top: 0px
+                        font-weight: 600
+                        font-size: 18px
+                        line-height: 30px
+                        letter-spacing: 0.3px
+                        color: #000000
+                    &_descr
+                        margin-top: 0px
+                        font-weight: 400
+                        font-size: 14px
+                        line-height: 24px
+                        letter-spacing: 0.3px
+                        color: #949494
+    .task
+        display: none
+    .feedback
+        display: none
+    footer
+        display: none
+
+
+    
 
 
             
