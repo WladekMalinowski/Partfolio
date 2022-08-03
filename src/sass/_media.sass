@@ -120,7 +120,7 @@
             left: unset
         .carousel-control-next
             top: 220px
-            right: 17px
+            right: 23px
     .carousel
         height: 400px
     footer
@@ -153,6 +153,9 @@
         display: none
     .navbar-toggler
         margin-right: 0px
+    .navbar-toggler-icon
+        width: 20px
+        height: 20px
     .promo
         background: #000
         height: 740px
@@ -209,16 +212,40 @@
         padding: 0 8px
         height: auto
         h2
-            font-size: 35px
-            line-height: 50px
-            padding-top: 0px 
-            margin-top: 60px
+            display: none
+        h2
+            font-size: 36px
         h3
-            font-size: 10px
+            font-weight: 600
+            font-size: 26px
+            line-height: 40px
+        &_user
+            flex-direction: column
+            align-items: Start
+            &_descr
+                margin: 0px
+                &_name
+                    margin-top: 22px
+                    font-size: 36px
+                    line-height: 36px
+                &_position
+                    font-size: 22px
+                    font-weight: 400
+                    margin-top: 10px
+                    line-height: 22px
+            img
+                width: 90px
+                height: 90px
+        &_percent
+            flex-direction: column
+            padding: 0px
+            &_item
+                margin-top: 30px
         &_leftside
             &_box
                 &_wrap
-                    padding: 0px
+                    margin-top: 25px
+                    padding: 12px 0 0 0
                     display: flex
                     box-shadow: none
                     flex-direction: row
@@ -256,10 +283,179 @@
                         line-height: 24px
                         letter-spacing: 0.3px
                         color: #949494
+                    &_icon
+                        flex-shrink: 0
+                        margin-right: 16px
     .task
-        display: none
+        margin-bottom: 370px
+        .row
+            width: 360px
+        .head_accordion
+            font-size: 36px
+        padding: 0
+        .accordion-button
+            padding: 15px 0px
+        .container-fluid
+            padding: 0 8px
+        .accordion-body
+            padding: 0px 0px 0px 58px
+        .accordion-body-bLink
+            padding-left: 58px
+        &_percent
+            width: 160px
+            height: 170px
+            padding: 8px
+            left: 180px
+            top: 670px
+
+            &_head
+                font-size: 9px
+                line-height: 11px
+            &_subhead
+                font-size: 6px
+                margin-top: 0px
+            .dot_btn
+                height: 2px
+            &_round
+                padding-top: 20px
+                margin: 20px auto
+                width: 90px
+                height: 90px
+            &_number
+                font-size: 16px
+                line-height: 16px
+            &_descr
+                font-size: 6px
+                margin-top: 3px
+                line-height: 6px
+        &_project
+            width: 204px
+            height: 166px
+            padding: 14px
+            top: 800px
+            left: 20px
+            &_head
+                font-size: 9px
+                padding-top: 0px 
+                margin-top: 0px
+                line-height: 13px
+            &_subhead
+                font-size: 6px
+                .subhead_text
+                    margin-left: 5px
+                img
+                    width: 6px
+                    height: auto
+            &_descr
+                margin: 7px 0 0 0
+                font-size: 6px
+                line-height: 10px
+            &_text
+                font-size: 9px
+            &_percent
+                font-size: 9px
+            &_percent_box
+                margin-top: 0px
+            &_line
+                margin-top: 0px
+                height: 3px
+            &_ava
+                width: 20px
+                height: 20px
+            &_ava1
+                left: 0px
+                .icon_ava
+                    width: 20px
+                    height: auto
+            &_ava2
+                left: 15px
+                .icon_ava
+                    width: 20px
+                    height: auto
+            &_ava3
+                left: 30px
+                .icon_ava
+                    width: 20px
+                    height: auto
+            &_ava_text
+                left: 50px
+                top: -5px
+                a
+                    font-size: 6px
+            &_roundbtn
+                width: 15px
+                height: 15px
+                font-size: 9px
+                top: 4px
+        &_box_bg
+            width: 305px
+            height: 196px
+            top: 740px
+        &_box_dot_white
+            left: 190px
+            top: 930px
+            img
+                width: 55px
     .feedback
-        display: none
+        padding: 0px
+        margin-bottom: 150px
+        &_bg
+            display: none
+        &_head
+            font-size: 36px
+            padding: 0 8px
+        .carousel-control-next
+            display: none
+        .carousel-control-prev
+            display: none
+        &_itembox
+            &_borderbox
+                display: none
+            &_video
+                padding: 0px
+                img
+                    width: 336px
+            &_descr
+                &_text
+                    padding: 0px 8px
+                &_name
+                    margin-top: 10px
+                    padding-left: 178px
+                &_position
+                    padding-left: 178px
+                    margin-bottom: 10px
+    footer
+        padding: 0 8px
+        height: 890px
+        h2
+            font-size: 34px
+            padding-top: 60px
+            margin: 0px
+            font-weight: 600
+        .footer_round_head
+            display: none
+        .footer_round_2
+            left: 220px
+        .footer_head_left
+            flex-direction: column
+            margin-top: 60px
+        .footer_btn_descr
+            margin: 15px 0 51px 0
+        .btn
+            width: 320px
+        .footer_line
+            margin: 0px
+        .footer_wrap
+            margin: 20px 0 20px 
+        .footer_wrap_item
+            li
+                padding-top: 10px
+        .footer_wrap_item_mail
+            margin-top: 20px
+        .footer_wrap_item_sm
+            padding: 0px
+        .footer_wrap_item_sm_icon
+            padding-right: 15px
 
 
             
